@@ -10,8 +10,16 @@
 
 @interface UIScrollView (XOAdditions)
 
+/**
+ Scroll to the top of the receiver without animation.
+ */
 - (void)xo_scrollToTop;
 
+/**
+ Scroll to the top of the receiver.
+ 
+ @param animated 'YES' to animate the transition at a constant velocity, 'NO' to change the offset immediately.
+ */
 - (void)xo_scrollToTopAnimated:(BOOL)animated;
 
 @end
