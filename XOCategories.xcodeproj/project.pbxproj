@@ -16,10 +16,12 @@
 		5116A520179AF42600A6464E /* XOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5116A516179AF3F700A6464E /* XOAppDelegate.m */; };
 		5116A521179AF42A00A6464E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5116A518179AF3F700A6464E /* main.m */; };
 		5116A526179AF48200A6464E /* UIView+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5116A525179AF47C00A6464E /* UIView+XOAdditions.m */; };
-		515E447017A4392100735710 /* XOUIViewAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 515E446F17A4391B00735710 /* XOUIViewAdditionsTests.m */; };
 		515E447117A439B300735710 /* UIView+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5116A525179AF47C00A6464E /* UIView+XOAdditions.m */; };
 		515E447417A4576300735710 /* UIScrollView+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 515E447317A4575800735710 /* UIScrollView+XOAdditions.m */; };
 		515E447517A4576400735710 /* UIScrollView+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 515E447317A4575800735710 /* UIScrollView+XOAdditions.m */; };
+		518170AB17A45A3C00F3D1FF /* NSDictionary+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 518170AA17A45A3900F3D1FF /* NSDictionary+XOAdditions.m */; };
+		518170AC17A45A3D00F3D1FF /* NSDictionary+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 518170AA17A45A3900F3D1FF /* NSDictionary+XOAdditions.m */; };
+		518170B117A45ADC00F3D1FF /* XONSDictionaryAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 518170B017A45AD800F3D1FF /* XONSDictionaryAdditionsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +50,12 @@
 		5116A51E179AF3F700A6464E /* XOCategoriesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XOCategoriesTests-Info.plist"; sourceTree = "<group>"; };
 		5116A524179AF47C00A6464E /* UIView+XOAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+XOAdditions.h"; sourceTree = "<group>"; };
 		5116A525179AF47C00A6464E /* UIView+XOAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+XOAdditions.m"; sourceTree = "<group>"; };
-		515E446F17A4391B00735710 /* XOUIViewAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XOUIViewAdditionsTests.m; sourceTree = "<group>"; };
 		515E447217A4575800735710 /* UIScrollView+XOAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XOAdditions.h"; sourceTree = "<group>"; };
 		515E447317A4575800735710 /* UIScrollView+XOAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XOAdditions.m"; sourceTree = "<group>"; };
+		518170A917A45A3900F3D1FF /* NSDictionary+XOAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+XOAdditions.h"; sourceTree = "<group>"; };
+		518170AA17A45A3900F3D1FF /* NSDictionary+XOAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+XOAdditions.m"; sourceTree = "<group>"; };
+		518170AF17A45ABF00F3D1FF /* XOUIViewAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XOUIViewAdditionsTests.m; sourceTree = "<group>"; };
+		518170B017A45AD800F3D1FF /* XONSDictionaryAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XONSDictionaryAdditionsTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				5116A51E179AF3F700A6464E /* XOCategoriesTests-Info.plist */,
-				515E446F17A4391B00735710 /* XOUIViewAdditionsTests.m */,
+				518170AD17A45ABF00F3D1FF /* Foundation */,
+				518170AE17A45ABF00F3D1FF /* UIKit */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -166,6 +172,8 @@
 		5116A522179AF46B00A6464E /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				518170A917A45A3900F3D1FF /* NSDictionary+XOAdditions.h */,
+				518170AA17A45A3900F3D1FF /* NSDictionary+XOAdditions.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -177,6 +185,22 @@
 				515E447317A4575800735710 /* UIScrollView+XOAdditions.m */,
 				5116A524179AF47C00A6464E /* UIView+XOAdditions.h */,
 				5116A525179AF47C00A6464E /* UIView+XOAdditions.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		518170AD17A45ABF00F3D1FF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				518170B017A45AD800F3D1FF /* XONSDictionaryAdditionsTests.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		518170AE17A45ABF00F3D1FF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				518170AF17A45ABF00F3D1FF /* XOUIViewAdditionsTests.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -278,6 +302,7 @@
 				5116A520179AF42600A6464E /* XOAppDelegate.m in Sources */,
 				515E447417A4576300735710 /* UIScrollView+XOAdditions.m in Sources */,
 				5116A526179AF48200A6464E /* UIView+XOAdditions.m in Sources */,
+				518170AB17A45A3C00F3D1FF /* NSDictionary+XOAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				515E447517A4576400735710 /* UIScrollView+XOAdditions.m in Sources */,
-				515E447017A4392100735710 /* XOUIViewAdditionsTests.m in Sources */,
+				518170B117A45ADC00F3D1FF /* XONSDictionaryAdditionsTests.m in Sources */,
+				518170AC17A45A3D00F3D1FF /* NSDictionary+XOAdditions.m in Sources */,
 				515E447117A439B300735710 /* UIView+XOAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
