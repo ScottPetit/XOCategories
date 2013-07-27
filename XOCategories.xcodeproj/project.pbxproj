@@ -22,6 +22,9 @@
 		518170AB17A45A3C00F3D1FF /* NSDictionary+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 518170AA17A45A3900F3D1FF /* NSDictionary+XOAdditions.m */; };
 		518170AC17A45A3D00F3D1FF /* NSDictionary+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 518170AA17A45A3900F3D1FF /* NSDictionary+XOAdditions.m */; };
 		518170B117A45ADC00F3D1FF /* XONSDictionaryAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 518170B017A45AD800F3D1FF /* XONSDictionaryAdditionsTests.m */; };
+		51DB7CE317A46AF6009CB2D1 /* UIColor+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DB7CE217A46AEB009CB2D1 /* UIColor+XOAdditions.m */; };
+		51DB7CE517A46CA8009CB2D1 /* XOUIColorAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DB7CE417A46C72009CB2D1 /* XOUIColorAdditionsTests.m */; };
+		51DB7CE617A46CB0009CB2D1 /* UIColor+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DB7CE217A46AEB009CB2D1 /* UIColor+XOAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		518170AA17A45A3900F3D1FF /* NSDictionary+XOAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+XOAdditions.m"; sourceTree = "<group>"; };
 		518170AF17A45ABF00F3D1FF /* XOUIViewAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XOUIViewAdditionsTests.m; sourceTree = "<group>"; };
 		518170B017A45AD800F3D1FF /* XONSDictionaryAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XONSDictionaryAdditionsTests.m; sourceTree = "<group>"; };
+		51DB7CE117A46AEB009CB2D1 /* UIColor+XOAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+XOAdditions.h"; sourceTree = "<group>"; };
+		51DB7CE217A46AEB009CB2D1 /* UIColor+XOAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XOAdditions.m"; sourceTree = "<group>"; };
+		51DB7CE417A46C72009CB2D1 /* XOUIColorAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XOUIColorAdditionsTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,8 @@
 		5116A523179AF46B00A6464E /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				51DB7CE117A46AEB009CB2D1 /* UIColor+XOAdditions.h */,
+				51DB7CE217A46AEB009CB2D1 /* UIColor+XOAdditions.m */,
 				515E447217A4575800735710 /* UIScrollView+XOAdditions.h */,
 				515E447317A4575800735710 /* UIScrollView+XOAdditions.m */,
 				5116A524179AF47C00A6464E /* UIView+XOAdditions.h */,
@@ -201,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				518170AF17A45ABF00F3D1FF /* XOUIViewAdditionsTests.m */,
+				51DB7CE417A46C72009CB2D1 /* XOUIColorAdditionsTests.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -298,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51DB7CE317A46AF6009CB2D1 /* UIColor+XOAdditions.m in Sources */,
 				5116A521179AF42A00A6464E /* main.m in Sources */,
 				5116A520179AF42600A6464E /* XOAppDelegate.m in Sources */,
 				515E447417A4576300735710 /* UIScrollView+XOAdditions.m in Sources */,
@@ -310,6 +320,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51DB7CE617A46CB0009CB2D1 /* UIColor+XOAdditions.m in Sources */,
+				51DB7CE517A46CA8009CB2D1 /* XOUIColorAdditionsTests.m in Sources */,
 				515E447517A4576400735710 /* UIScrollView+XOAdditions.m in Sources */,
 				518170B117A45ADC00F3D1FF /* XONSDictionaryAdditionsTests.m in Sources */,
 				518170AC17A45A3D00F3D1FF /* NSDictionary+XOAdditions.m in Sources */,
