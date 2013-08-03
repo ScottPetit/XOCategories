@@ -53,6 +53,29 @@
     return CGColorGetAlpha(self.CGColor);
 }
 
++ (instancetype)xo_colorFromString:(NSString *)colorString
+{
+    if (!colorString.length)
+    {
+        return nil;
+    }
+    
+    NSString *lowercaseColor = [colorString lowercaseString];
+    NSString *color = [lowercaseColor stringByAppendingString:@"Color"];
+    
+    SEL colorSelector = NSSelectorFromString(color);
+    
+    if ([UIColor respondsToSelector:colorSelector])
+    {
+        return [UIColor performSelector:colorSelector];
+    }
+    else
+    {
+        return nil;
+    }
+
+}
+
 #pragma mark - Flat Colors
 
 + (UIColor *)xo_flatTurquoiseColor

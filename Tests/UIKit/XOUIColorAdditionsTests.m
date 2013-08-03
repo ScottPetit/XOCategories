@@ -31,21 +31,21 @@
 {
     UIColor *redColor = [UIColor redColor];
     
-    XCTAssertEquals([redColor xo_red], 1.0f, @"UIColor Red Color should have a red value equal to 1.0");
+    XCTAssertEqual([redColor xo_red], 1.0f, @"UIColor Red Color should have a red value equal to 1.0");
 }
 
 - (void)testGreen
 {
     UIColor *greenColor = [UIColor greenColor];
 
-    XCTAssertEquals([greenColor xo_green], 1.0f, @"Green Color should have a green value equal to 1.0");
+    XCTAssertEqual([greenColor xo_green], 1.0f, @"Green Color should have a green value equal to 1.0");
 }
 
 - (void)testBlue
 {
     UIColor *blueColor = [UIColor blueColor];
     
-    XCTAssertEquals([blueColor xo_blue], 1.0f, @"Blue Color should have a blue value equal to 1.0");
+    XCTAssertEqual([blueColor xo_blue], 1.0f, @"Blue Color should have a blue value equal to 1.0");
 }
 
 - (void)testColors
@@ -57,19 +57,30 @@
     
     UIColor *color = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
     
-    XCTAssertEquals([color xo_red], red, @"Red should equal red");
-    XCTAssertEquals([color xo_green], green, @"Green should equal green");
-    XCTAssertEquals([color xo_blue], blue, @"Blue should equal blue");
-    XCTAssertEquals([color xo_alpha], alpha, @"Alpha should euqal alpha");
+    XCTAssertEqual([color xo_red], red, @"Red should equal red");
+    XCTAssertEqual([color xo_green], green, @"Green should equal green");
+    XCTAssertEqual([color xo_blue], blue, @"Blue should equal blue");
+    XCTAssertEqual([color xo_alpha], alpha, @"Alpha should euqal alpha");
 }
 
 - (void)testColorsInNonRGBColorSpaces
 {
     UIColor *color = [UIColor colorWithWhite:1.0 alpha:1.0];
     
-    XCTAssertEquals([color xo_red], -1.0f, @"Colors in a non RGB color space should return -1.0f");
-    XCTAssertEquals([color xo_green], -1.0f, @"Colors in a non RGB color space should return -1.0f");
-    XCTAssertEquals([color xo_blue], -1.0f, @"Colors in a non RGB color space should return -1.0f");
+    XCTAssertEqual([color xo_red], -1.0f, @"Colors in a non RGB color space should return -1.0f");
+    XCTAssertEqual([color xo_green], -1.0f, @"Colors in a non RGB color space should return -1.0f");
+    XCTAssertEqual([color xo_blue], -1.0f, @"Colors in a non RGB color space should return -1.0f");
+}
+
+- (void)testColorFromString
+{
+    XCTAssertNotNil([UIColor xo_colorFromString:@"red"], @"Color from string should return a color for 'red'");
+    XCTAssertNotNil([UIColor xo_colorFromString:@"GrEeN"], @"Color from should return a color for 'GrEeN");
+    XCTAssertNotNil([UIColor xo_colorFromString:@"BLUE"], @"Color from string should return a color for 'BLUE'");
+    
+    XCTAssertNil([UIColor xo_colorFromString:nil], @"Color from string should return a nil color for a nil string");
+    XCTAssertNil([UIColor xo_colorFromString:@""], @"Color from string should return a nil color for an empty string");
+    XCTAssertNil([UIColor xo_colorFromString:@"midnight-blue"], @"Color from string should return a nil color for an unsupported string");
 }
 
 @end

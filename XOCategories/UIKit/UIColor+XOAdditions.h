@@ -43,6 +43,14 @@
 - (CGFloat)xo_alpha;
 
 /**
+ Returns one of the default Objective-C colors when given an appropriate string.
+ 
+ @param A string that you want a color for (e.g.) red, GREEN, BlUe
+ @return A UIColor or nil from the given string.
+ */
++ (instancetype)xo_colorFromString:(NSString *)colorString;
+
+/**
  A collection of Flat colors based on http://flatuicolors.com/
 */
 + (UIColor *)xo_flatTurquoiseColor;
