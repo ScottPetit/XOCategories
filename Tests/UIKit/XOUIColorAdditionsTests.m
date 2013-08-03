@@ -63,4 +63,13 @@
     XCTAssertEquals([color xo_alpha], alpha, @"Alpha should euqal alpha");
 }
 
+- (void)testColorsInNonRGBColorSpaces
+{
+    UIColor *color = [UIColor colorWithWhite:1.0 alpha:1.0];
+    
+    XCTAssertEquals([color xo_red], -1.0f, @"Colors in a non RGB color space should return -1.0f");
+    XCTAssertEquals([color xo_green], -1.0f, @"Colors in a non RGB color space should return -1.0f");
+    XCTAssertEquals([color xo_blue], -1.0f, @"Colors in a non RGB color space should return -1.0f");
+}
+
 @end

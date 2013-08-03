@@ -208,8 +208,8 @@
 		518170AE17A45ABF00F3D1FF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				518170AF17A45ABF00F3D1FF /* XOUIViewAdditionsTests.m */,
 				51DB7CE417A46C72009CB2D1 /* XOUIColorAdditionsTests.m */,
+				518170AF17A45ABF00F3D1FF /* XOUIViewAdditionsTests.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
