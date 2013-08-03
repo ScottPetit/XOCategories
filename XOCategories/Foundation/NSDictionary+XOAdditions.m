@@ -21,4 +21,15 @@
     return object;
 }
 
+- (id)xo_safeCopyForKey:(id)key
+{
+    id object = [self[key] copy];
+    if (object == [NSNull null])
+    {
+        object = nil;
+    }
+    
+    return object;
+}
+
 @end

@@ -19,4 +19,13 @@
  */
 - (id)xo_safeObjectForKey:(id)key;
 
+/**
+ Returns a copy of the object for the specified key or `nil` if the value is `[NSNull null]`.
+ 
+ @param key The key used to look up the object in the receiver.
+ 
+ @return A copy of the object for the specified key or `nil` if the value is `[NSNull null]`.
+ */
+- (id)xo_safeCopyForKey:(id)key;
+
 @end
