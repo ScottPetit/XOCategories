@@ -73,7 +73,6 @@
     {
         return nil;
     }
-
 }
 
 #pragma mark - Flat Colors
