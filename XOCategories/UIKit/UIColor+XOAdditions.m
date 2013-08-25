@@ -8,8 +8,6 @@
 
 #import "UIColor+XOAdditions.h"
 
-#define RGB(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
-
 @implementation UIColor (XOAdditions)
 
 - (CGFloat)xo_red
@@ -79,102 +77,102 @@
 
 + (UIColor *)xo_flatTurquoiseColor
 {
-    return RGB(26, 188, 156);
+    return XO_RGB(26, 188, 156);
 }
 
 + (UIColor *)xo_flatGreenSeaColor
 {
-    return RGB(22, 160, 133);
+    return XO_RGB(22, 160, 133);
 }
 
 + (UIColor *)xo_flatEmerlandColor
 {
-    return RGB(46, 204, 113);
+    return XO_RGB(46, 204, 113);
 }
 
 + (UIColor *)xo_flatNephritisColor
 {
-    return RGB(39, 174, 96);
+    return XO_RGB(39, 174, 96);
 }
 
 + (UIColor *)xo_flatPeterRiverColor
 {
-    return RGB(52, 152, 219);
+    return XO_RGB(52, 152, 219);
 }
 
 + (UIColor *)xo_flatBelizeHoleColor
 {
-    return RGB(41, 128, 185);
+    return XO_RGB(41, 128, 185);
 }
 
 + (UIColor *)xo_flatAmethystColor
 {
-    return RGB(155, 89, 182);
+    return XO_RGB(155, 89, 182);
 }
 
 + (UIColor *)xo_flatWisteriaColor
 {
-    return RGB(142, 68, 173);
+    return XO_RGB(142, 68, 173);
 }
 
 + (UIColor *)xo_flatWetAsphaltColor
 {
-    return RGB(52, 73, 94);
+    return XO_RGB(52, 73, 94);
 }
 
 + (UIColor *)xo_flatMidnightBlueColor
 {
-    return RGB(44, 62, 80);
+    return XO_RGB(44, 62, 80);
 }
 
 + (UIColor *)xo_flatSunflowerColor
 {
-    return RGB(241, 196, 15);
+    return XO_RGB(241, 196, 15);
 }
 
 + (UIColor *)xo_flatOrangeColor
 {
-    return RGB(243, 156, 18);
+    return XO_RGB(243, 156, 18);
 }
 
 + (UIColor *)xo_flatCarrotColor
 {
-    return RGB(230, 126, 34);
+    return XO_RGB(230, 126, 34);
 }
 
 + (UIColor *)xo_flatPumpkinColor
 {
-    return RGB(211, 84, 0);
+    return XO_RGB(211, 84, 0);
 }
 
 + (UIColor *)xo_flatAlizarinColor
 {
-    return RGB(231, 76, 60);
+    return XO_RGB(231, 76, 60);
 }
 
 + (UIColor *)xo_flatPomegranateColor
 {
-    return RGB(192, 57, 43);
+    return XO_RGB(192, 57, 43);
 }
 
 + (UIColor *)xo_flatCloudsColor
 {
-    return RGB(236, 240, 241);
+    return XO_RGB(236, 240, 241);
 }
 
 + (UIColor *)xo_flatSilverColor
 {
-    return RGB(189, 195, 199);
+    return XO_RGB(189, 195, 199);
 }
 
 + (UIColor *)xo_flatConcreteColor
 {
-    return RGB(149, 165, 166);
+    return XO_RGB(149, 165, 166);
 }
 
 + (UIColor *)xo_flatAsbestosColor
 {
-    return RGB(127, 140, 141);
+    return XO_RGB(127, 140, 141);
 }
 
 @end
