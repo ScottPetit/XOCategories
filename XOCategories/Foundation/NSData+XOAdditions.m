@@ -40,7 +40,7 @@ static char xo_base64EncodingTable[64] = {
         output[index + 2] = (i + 1) < length ? xo_base64EncodingTable[(value >> 6) & 0x3F] : '=';
         output[index + 3] = (i + 2) < length ? xo_base64EncodingTable[(value >> 0) & 0x3F] : '=';
     }
-    
+        
     return [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
 }
 

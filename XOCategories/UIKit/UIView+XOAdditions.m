@@ -12,18 +12,6 @@ static NSInteger const kAnimationDuration = 0.3;
 
 @implementation UIView (XOAdditions)
 
-- (void)xo_fadeIn
-{
-    [self xo_fadeInWithCompletion:nil];
-}
-
-- (void)xo_fadeInWithCompletion:(XOCompletionBlock)completionBlock
-{
-    [UIView animateWithDuration:kAnimationDuration animations:^{
-        self.alpha = 1.0;
-    } completion:completionBlock];
-}
-
 - (void)xo_fadeOut
 {
     [self xo_fadeOutWithCompletion:nil];
@@ -41,6 +29,18 @@ static NSInteger const kAnimationDuration = 0.3;
     [self xo_fadeOutWithCompletion:^(BOOL finished) {
         [self removeFromSuperview];
     }];
+}
+
+- (void)xo_fadeIn
+{
+    [self xo_fadeInWithCompletion:nil];
+}
+
+- (void)xo_fadeInWithCompletion:(XOCompletionBlock)completionBlock
+{
+    [UIView animateWithDuration:kAnimationDuration animations:^{
+        self.alpha = 1.0;
+    } completion:completionBlock];
 }
 
 - (BOOL)xo_visible
