@@ -25,6 +25,7 @@
 		51DB7CE317A46AF6009CB2D1 /* UIColor+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DB7CE217A46AEB009CB2D1 /* UIColor+XOAdditions.m */; };
 		51DB7CE517A46CA8009CB2D1 /* XOUIColorAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DB7CE417A46C72009CB2D1 /* XOUIColorAdditionsTests.m */; };
 		51DB7CE617A46CB0009CB2D1 /* UIColor+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DB7CE217A46AEB009CB2D1 /* UIColor+XOAdditions.m */; };
+		D23C605817DDFEF600E750C7 /* XONSStringAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D23C605717DDFEF600E750C7 /* XONSStringAdditionsTests.m */; };
 		D2561BB017DCEB1A00023ED9 /* NSString+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2561BAF17DCEB1A00023ED9 /* NSString+XOAdditions.m */; };
 		D29E565217B6EE1E00D70C11 /* NSData+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E565117B6EE1E00D70C11 /* NSData+XOAdditions.m */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		51DB7CE117A46AEB009CB2D1 /* UIColor+XOAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+XOAdditions.h"; sourceTree = "<group>"; };
 		51DB7CE217A46AEB009CB2D1 /* UIColor+XOAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XOAdditions.m"; sourceTree = "<group>"; };
 		51DB7CE417A46C72009CB2D1 /* XOUIColorAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XOUIColorAdditionsTests.m; sourceTree = "<group>"; };
+		D23C605717DDFEF600E750C7 /* XONSStringAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XONSStringAdditionsTests.m; sourceTree = "<group>"; };
 		D2561BAE17DCEB1A00023ED9 /* NSString+XOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XOAdditions.h"; sourceTree = "<group>"; };
 		D2561BAF17DCEB1A00023ED9 /* NSString+XOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XOAdditions.m"; sourceTree = "<group>"; };
 		D29E565017B6EE1E00D70C11 /* NSData+XOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+XOAdditions.h"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				518170B017A45AD800F3D1FF /* XONSDictionaryAdditionsTests.m */,
+				D23C605717DDFEF600E750C7 /* XONSStringAdditionsTests.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				51DB7CE517A46CA8009CB2D1 /* XOUIColorAdditionsTests.m in Sources */,
 				515E447517A4576400735710 /* UIScrollView+XOAdditions.m in Sources */,
 				518170B117A45ADC00F3D1FF /* XONSDictionaryAdditionsTests.m in Sources */,
+				D23C605817DDFEF600E750C7 /* XONSStringAdditionsTests.m in Sources */,
 				518170AC17A45A3D00F3D1FF /* NSDictionary+XOAdditions.m in Sources */,
 				515E447117A439B300735710 /* UIView+XOAdditions.m in Sources */,
 			);

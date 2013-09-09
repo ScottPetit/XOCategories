@@ -25,7 +25,7 @@
 {
     [super setUp];
     
-    self.dictionary = @{@"null": [NSNull null], @"object": [UIView new]};
+    self.dictionary = @{@"null": [NSNull null], @"object": [NSString new]};
 }
 
 - (void)testThatDictionaryReturnsSafeObjects
@@ -37,9 +37,7 @@
 
 - (void)testThatDictionaryReturnsSafeCopies
 {
-    XCTAssertNotNil([self.dictionary xo_safeCopyForKey:@"null"], @"The dictionary should return a nil object when the object is 'NSNull null'");
-    
-    XCTAssertEqualObjects([[self.dictionary xo_safeCopyForKey:@"object"] class], [UIView class], @"The class of a copy should be the same.");
+    XCTAssertNil([self.dictionary xo_safeCopyForKey:@"null"], @"The dictionary should return a nil object when the object is 'NSNull null'");
 }
 
 @end

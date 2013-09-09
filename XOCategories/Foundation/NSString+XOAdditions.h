@@ -15,4 +15,12 @@
  */
 - (NSString *)xo_MD5String;
 
+/**
+ Checks the receiever if it contains the given string.
+ 
+ @param string The string to check against for the receiver.
+ @return A BOOL indicating whether the reciever contains the given string. 
+*/
+- (BOOL)xo_containsString:(NSString *)string;
+
 @end
