@@ -10,6 +10,41 @@
 
 @implementation NSDate (XOAdditions)
 
+- (NSTimeInterval)numberOfSecondsInAMinute
+{
+    return 60;
+}
+
+- (NSTimeInterval)numberOfMinutesInAHour
+{
+    return 60;
+}
+
+- (NSTimeInterval)numberOfDaysInAWeek
+{
+    return 7;
+}
+
+- (NSTimeInterval)numberOfSecondsInAHour
+{
+    return [self numberOfSecondsInAMinute] * [self numberOfMinutesInAHour];
+}
+
+- (NSTimeInterval)numberOfHoursInADay
+{
+    return 24;
+}
+
+- (NSTimeInterval)numberOfSecondsInADay
+{
+    return [self numberOfHoursInADay] * [self numberOfSecondsInAHour];
+}
+
+- (NSTimeInterval)numberOfSecondsInAWeek
+{
+    return [self numberOfDaysInAWeek] * [self numberOfSecondsInADay];
+}
+
 - (BOOL)xo_isAfter:(NSDate *)aDate
 {
     return [self compare:aDate] == NSOrderedDescending;
