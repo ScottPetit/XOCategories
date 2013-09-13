@@ -10,39 +10,39 @@
 
 @implementation NSDate (XOAdditions)
 
-+ (NSTimeInterval)numberOfSecondsInAMinute
++ (NSTimeInterval)xo_numberOfSecondsInAMinute
 {
     return 60;
 }
 
-+ (NSTimeInterval)numberOfMinutesInAHour
++ (NSTimeInterval)xo_numberOfMinutesInAHour
 {
     return 60;
 }
 
-+ (NSTimeInterval)numberOfDaysInAWeek
++ (NSTimeInterval)xo_numberOfDaysInAWeek
 {
     return 7;
 }
 
-+ (NSTimeInterval)numberOfSecondsInAHour
++ (NSTimeInterval)xo_numberOfSecondsInAHour
 {
-    return [self numberOfSecondsInAMinute] * [self numberOfMinutesInAHour];
+    return [self xo_numberOfSecondsInAMinute] * [self xo_numberOfMinutesInAHour];
 }
 
-+ (NSTimeInterval)numberOfHoursInADay
++ (NSTimeInterval)xo_numberOfHoursInADay
 {
     return 24;
 }
 
-+ (NSTimeInterval)numberOfSecondsInADay
++ (NSTimeInterval)xo_numberOfSecondsInADay
 {
-    return [self numberOfHoursInADay] * [self numberOfSecondsInAHour];
+    return [self xo_numberOfHoursInADay] * [self xo_numberOfSecondsInAHour];
 }
 
-+ (NSTimeInterval)numberOfSecondsInAWeek
++ (NSTimeInterval)xo_numberOfSecondsInAWeek
 {
-    return [self numberOfDaysInAWeek] * [self numberOfSecondsInADay];
+    return [self xo_numberOfDaysInAWeek] * [self xo_numberOfSecondsInADay];
 }
 
 - (BOOL)xo_isAfter:(NSDate *)aDate
