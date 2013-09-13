@@ -28,6 +28,7 @@
 		D23C605817DDFEF600E750C7 /* XONSStringAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D23C605717DDFEF600E750C7 /* XONSStringAdditionsTests.m */; };
 		D2561BB017DCEB1A00023ED9 /* NSString+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2561BAF17DCEB1A00023ED9 /* NSString+XOAdditions.m */; };
 		D29E565217B6EE1E00D70C11 /* NSData+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E565117B6EE1E00D70C11 /* NSData+XOAdditions.m */; };
+		D2A36EC117E2F5FD00C981FE /* NSDate+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A36EC017E2F5FD00C981FE /* NSDate+XOAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		D2561BAF17DCEB1A00023ED9 /* NSString+XOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XOAdditions.m"; sourceTree = "<group>"; };
 		D29E565017B6EE1E00D70C11 /* NSData+XOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+XOAdditions.h"; sourceTree = "<group>"; };
 		D29E565117B6EE1E00D70C11 /* NSData+XOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+XOAdditions.m"; sourceTree = "<group>"; };
+		D2A36EBF17E2F5FD00C981FE /* NSDate+XOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XOAdditions.h"; sourceTree = "<group>"; };
+		D2A36EC017E2F5FD00C981FE /* NSDate+XOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XOAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +195,8 @@
 				D29E565117B6EE1E00D70C11 /* NSData+XOAdditions.m */,
 				D2561BAE17DCEB1A00023ED9 /* NSString+XOAdditions.h */,
 				D2561BAF17DCEB1A00023ED9 /* NSString+XOAdditions.m */,
+				D2A36EBF17E2F5FD00C981FE /* NSDate+XOAdditions.h */,
+				D2A36EC017E2F5FD00C981FE /* NSDate+XOAdditions.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 				51DB7CE317A46AF6009CB2D1 /* UIColor+XOAdditions.m in Sources */,
 				5116A521179AF42A00A6464E /* main.m in Sources */,
 				D2561BB017DCEB1A00023ED9 /* NSString+XOAdditions.m in Sources */,
+				D2A36EC117E2F5FD00C981FE /* NSDate+XOAdditions.m in Sources */,
 				D29E565217B6EE1E00D70C11 /* NSData+XOAdditions.m in Sources */,
 				5116A520179AF42600A6464E /* XOAppDelegate.m in Sources */,
 				515E447417A4576300735710 /* UIScrollView+XOAdditions.m in Sources */,
