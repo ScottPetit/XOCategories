@@ -8,13 +8,13 @@
 
 @interface NSDate (XOAdditions)
 
-- (NSTimeInterval)numberOfSecondsInAMinute;
-- (NSTimeInterval)numberOfMinutesInAHour;
-- (NSTimeInterval)numberOfDaysInAWeek;
-- (NSTimeInterval)numberOfSecondsInAHour;
-- (NSTimeInterval)numberOfHoursInADay;
-- (NSTimeInterval)numberOfSecondsInADay;
-- (NSTimeInterval)numberOfSecondsInAWeek;
++ (NSTimeInterval)numberOfSecondsInAMinute;
++ (NSTimeInterval)numberOfMinutesInAHour;
++ (NSTimeInterval)numberOfDaysInAWeek;
++ (NSTimeInterval)numberOfSecondsInAHour;
++ (NSTimeInterval)numberOfHoursInADay;
++ (NSTimeInterval)numberOfSecondsInADay;
++ (NSTimeInterval)numberOfSecondsInAWeek;
 
 - (BOOL)xo_isAfter:(NSDate *)aDate;
 

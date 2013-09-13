@@ -10,37 +10,37 @@
 
 @implementation NSDate (XOAdditions)
 
-- (NSTimeInterval)numberOfSecondsInAMinute
++ (NSTimeInterval)numberOfSecondsInAMinute
 {
     return 60;
 }
 
-- (NSTimeInterval)numberOfMinutesInAHour
++ (NSTimeInterval)numberOfMinutesInAHour
 {
     return 60;
 }
 
-- (NSTimeInterval)numberOfDaysInAWeek
++ (NSTimeInterval)numberOfDaysInAWeek
 {
     return 7;
 }
 
-- (NSTimeInterval)numberOfSecondsInAHour
++ (NSTimeInterval)numberOfSecondsInAHour
 {
     return [self numberOfSecondsInAMinute] * [self numberOfMinutesInAHour];
 }
 
-- (NSTimeInterval)numberOfHoursInADay
++ (NSTimeInterval)numberOfHoursInADay
 {
     return 24;
 }
 
-- (NSTimeInterval)numberOfSecondsInADay
++ (NSTimeInterval)numberOfSecondsInADay
 {
     return [self numberOfHoursInADay] * [self numberOfSecondsInAHour];
 }
 
-- (NSTimeInterval)numberOfSecondsInAWeek
++ (NSTimeInterval)numberOfSecondsInAWeek
 {
     return [self numberOfDaysInAWeek] * [self numberOfSecondsInADay];
 }
