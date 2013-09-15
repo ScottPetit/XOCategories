@@ -27,6 +27,7 @@
 		51DB7CE617A46CB0009CB2D1 /* UIColor+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DB7CE217A46AEB009CB2D1 /* UIColor+XOAdditions.m */; };
 		D23C605817DDFEF600E750C7 /* XONSStringAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D23C605717DDFEF600E750C7 /* XONSStringAdditionsTests.m */; };
 		D2561BB017DCEB1A00023ED9 /* NSString+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2561BAF17DCEB1A00023ED9 /* NSString+XOAdditions.m */; };
+		D2665C8C17E60AE3009F7107 /* UIFont+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2665C8B17E60AE3009F7107 /* UIFont+XOAdditions.m */; };
 		D29E565217B6EE1E00D70C11 /* NSData+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E565117B6EE1E00D70C11 /* NSData+XOAdditions.m */; };
 		D2A36EC117E2F5FD00C981FE /* NSDate+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A36EC017E2F5FD00C981FE /* NSDate+XOAdditions.m */; };
 		D2A36EC317E2FBE100C981FE /* XONSDateAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A36EC217E2FBE100C981FE /* XONSDateAdditionsTests.m */; };
@@ -70,6 +71,8 @@
 		D23C605717DDFEF600E750C7 /* XONSStringAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XONSStringAdditionsTests.m; sourceTree = "<group>"; };
 		D2561BAE17DCEB1A00023ED9 /* NSString+XOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XOAdditions.h"; sourceTree = "<group>"; };
 		D2561BAF17DCEB1A00023ED9 /* NSString+XOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XOAdditions.m"; sourceTree = "<group>"; };
+		D2665C8A17E60AE3009F7107 /* UIFont+XOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+XOAdditions.h"; sourceTree = "<group>"; };
+		D2665C8B17E60AE3009F7107 /* UIFont+XOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+XOAdditions.m"; sourceTree = "<group>"; };
 		D29E565017B6EE1E00D70C11 /* NSData+XOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+XOAdditions.h"; sourceTree = "<group>"; };
 		D29E565117B6EE1E00D70C11 /* NSData+XOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+XOAdditions.m"; sourceTree = "<group>"; };
 		D2A36EBF17E2F5FD00C981FE /* NSDate+XOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XOAdditions.h"; sourceTree = "<group>"; };
@@ -206,6 +209,8 @@
 		5116A523179AF46B00A6464E /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D2665C8A17E60AE3009F7107 /* UIFont+XOAdditions.h */,
+				D2665C8B17E60AE3009F7107 /* UIFont+XOAdditions.m */,
 				51DB7CE117A46AEB009CB2D1 /* UIColor+XOAdditions.h */,
 				51DB7CE217A46AEB009CB2D1 /* UIColor+XOAdditions.m */,
 				515E447217A4575800735710 /* UIScrollView+XOAdditions.h */,
@@ -331,6 +336,7 @@
 				51DB7CE317A46AF6009CB2D1 /* UIColor+XOAdditions.m in Sources */,
 				5116A521179AF42A00A6464E /* main.m in Sources */,
 				D2561BB017DCEB1A00023ED9 /* NSString+XOAdditions.m in Sources */,
+				D2665C8C17E60AE3009F7107 /* UIFont+XOAdditions.m in Sources */,
 				D2A36EC117E2F5FD00C981FE /* NSDate+XOAdditions.m in Sources */,
 				D29E565217B6EE1E00D70C11 /* NSData+XOAdditions.m in Sources */,
 				5116A520179AF42600A6464E /* XOAppDelegate.m in Sources */,
