@@ -40,12 +40,6 @@
     self.date = [NSDate date];
 }
 
-- (void)tearDown
-{
-    // Put teardown code here; it will be run once, after the last test case.
-    [super tearDown];
-}
-
 - (void)testNumberOfSecondsInAMinute
 {
     XCTAssertEqualObjects(@60, @([NSDate xo_numberOfSecondsInAMinute]), @"The number of seconds in a minute is 60");
