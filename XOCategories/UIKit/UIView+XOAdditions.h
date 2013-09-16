@@ -44,4 +44,9 @@ typedef void (^XOCompletionBlock)(BOOL finished);
  */
 - (BOOL)xo_visible;
 
+/**
+ Sets the corner radius of the receivers layer and masks to bounds.
+*/
+- (void)xo_makeCircle;
+
 @end
