@@ -48,7 +48,7 @@ static NSInteger const kAnimationDuration = 0.3;
     return !self.hidden && self.alpha != 0;
 }
 
-- (void)xo_makeCircle
+- (void)xo_makeCircular
 {
     [self.layer setCornerRadius:CGRectGetWidth(self.frame) / 2];
     self.layer.masksToBounds = YES;
