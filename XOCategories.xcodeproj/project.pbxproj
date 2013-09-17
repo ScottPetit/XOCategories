@@ -31,6 +31,7 @@
 		D29E565217B6EE1E00D70C11 /* NSData+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E565117B6EE1E00D70C11 /* NSData+XOAdditions.m */; };
 		D2A36EC117E2F5FD00C981FE /* NSDate+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A36EC017E2F5FD00C981FE /* NSDate+XOAdditions.m */; };
 		D2A36EC317E2FBE100C981FE /* XONSDateAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A36EC217E2FBE100C981FE /* XONSDateAdditionsTests.m */; };
+		D2D329B117E8160F00940A82 /* UIViewController+XOAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D329B017E8160F00940A82 /* UIViewController+XOAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		D2A36EBF17E2F5FD00C981FE /* NSDate+XOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XOAdditions.h"; sourceTree = "<group>"; };
 		D2A36EC017E2F5FD00C981FE /* NSDate+XOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XOAdditions.m"; sourceTree = "<group>"; };
 		D2A36EC217E2FBE100C981FE /* XONSDateAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XONSDateAdditionsTests.m; sourceTree = "<group>"; };
+		D2D329AF17E8160F00940A82 /* UIViewController+XOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XOAdditions.h"; sourceTree = "<group>"; };
+		D2D329B017E8160F00940A82 /* UIViewController+XOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XOAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +220,8 @@
 				515E447317A4575800735710 /* UIScrollView+XOAdditions.m */,
 				5116A524179AF47C00A6464E /* UIView+XOAdditions.h */,
 				5116A525179AF47C00A6464E /* UIView+XOAdditions.m */,
+				D2D329AF17E8160F00940A82 /* UIViewController+XOAdditions.h */,
+				D2D329B017E8160F00940A82 /* UIViewController+XOAdditions.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 				51DB7CE317A46AF6009CB2D1 /* UIColor+XOAdditions.m in Sources */,
 				5116A521179AF42A00A6464E /* main.m in Sources */,
 				D2561BB017DCEB1A00023ED9 /* NSString+XOAdditions.m in Sources */,
+				D2D329B117E8160F00940A82 /* UIViewController+XOAdditions.m in Sources */,
 				D2665C8C17E60AE3009F7107 /* UIFont+XOAdditions.m in Sources */,
 				D2A36EC117E2F5FD00C981FE /* NSDate+XOAdditions.m in Sources */,
 				D29E565217B6EE1E00D70C11 /* NSData+XOAdditions.m in Sources */,
