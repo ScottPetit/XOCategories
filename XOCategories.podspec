@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'XOCategories'
-  spec.version = '0.1.2'
+  spec.version = '0.1.3'
   spec.authors = {'Scott Petit' => 'petit.scott@gmail.com'}
   spec.homepage = 'https://github.com/scottpetit/XOCategories'
   spec.summary = 'A Convenience for UICollectionView and UITableView data sources.'
