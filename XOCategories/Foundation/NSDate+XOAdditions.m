@@ -45,11 +45,6 @@
     return [self xo_numberOfDaysInAWeek] * [self xo_numberOfSecondsInADay];
 }
 
-+ (NSDate *)xo_endOfToday
-{
-    return [[NSDate date] xo_endOfCurrentDay];
-}
-
 - (BOOL)xo_isAfter:(NSDate *)aDate
 {
     return [self compare:aDate] == NSOrderedDescending;
@@ -68,11 +63,6 @@
 - (BOOL)xo_isOnOrBefore:(NSDate *)aDate
 {
     return [self compare:aDate] == NSOrderedAscending || [aDate compare:self] == NSOrderedSame;
-}
-
-- (NSDate *)xo_endOfCurrentDay
-{
-    return [self xo_dateByAddingYears:0.0 months:0.0 weeks:0.0 days:1.0 hours:0.0 minutes:0.0 seconds:-1];
 }
 
 - (NSDate *)xo_dateByAddingYears:(NSInteger)years months:(NSInteger)months weeks:(NSInteger)weeks days:(NSInteger)days hours:(NSInteger)hours minutes:(NSInteger)minutes seconds:(NSInteger)seconds

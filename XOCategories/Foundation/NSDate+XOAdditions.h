@@ -16,8 +16,6 @@
 + (NSTimeInterval)xo_numberOfSecondsInADay;
 + (NSTimeInterval)xo_numberOfSecondsInAWeek;
 
-+ (NSDate *)xo_endOfToday;
-
 - (BOOL)xo_isAfter:(NSDate *)aDate;
 
 - (BOOL)xo_isOnOrAfter:(NSDate *)aDate;
@@ -25,8 +23,6 @@
 - (BOOL)xo_isBefore:(NSDate *)aDate;
 
 - (BOOL)xo_isOnOrBefore:(NSDate *)aDate;
-
-- (NSDate *)xo_endOfCurrentDay;
 
 - (NSDate *)xo_dateByAddingYears:(NSInteger)years months:(NSInteger)months weeks:(NSInteger)weeks days:(NSInteger)days hours:(NSInteger)hours minutes:(NSInteger)minutes seconds:(NSInteger)seconds;
 
