@@ -11,4 +11,7 @@
 - (void)xo_handleError:(NSError *)error;
 - (void)xo_handleError:(NSError *)error withTitle:(NSString *)title;
 
+- (void)xo_presentAlertWithTitle:(NSString *)title;
+- (void)xo_presentAlertWithTitle:(NSString *)title message:(NSString *)message;
+
 @end

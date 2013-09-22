@@ -24,7 +24,25 @@
         return;
     }
     
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:error.localizedFailureReason delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:error.localizedFailureReason delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alertView show];
+}
+
+- (void)xo_presentAlertWithTitle:(NSString *)title
+{
+    [self xo_presentAlertWithTitle:title message:nil];
+}
+
+- (void)xo_presentAlertWithTitle:(NSString *)title message:(NSString *)message
+{
+    NSParameterAssert(title.length);
+    
+    if (!title.length)
+    {
+        return;
+    }
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alertView show];
 }
 
