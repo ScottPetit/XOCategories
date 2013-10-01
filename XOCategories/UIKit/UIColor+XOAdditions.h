@@ -52,6 +52,8 @@
  */
 + (instancetype)xo_colorFromString:(NSString *)colorString;
 
++ (instancetype)xo_randomColor;
+
 /**
  A collection of Flat colors based on http://flatuicolors.com/
 */

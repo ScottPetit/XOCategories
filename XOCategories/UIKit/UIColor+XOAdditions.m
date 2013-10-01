@@ -73,6 +73,14 @@
     }
 }
 
++ (instancetype)xo_randomColor
+{
+    CGFloat red =  (CGFloat)arc4random() / (CGFloat)RAND_MAX;
+    CGFloat blue = (CGFloat)arc4random() / (CGFloat)RAND_MAX;
+    CGFloat green = (CGFloat)arc4random() / (CGFloat)RAND_MAX;
+    return XO_RGB(red, green, blue);
+}
+
 #pragma mark - Flat Colors
 
 + (UIColor *)xo_flatTurquoiseColor
