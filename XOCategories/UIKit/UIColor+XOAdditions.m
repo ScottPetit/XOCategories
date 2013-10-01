@@ -75,9 +75,9 @@
 
 + (instancetype)xo_randomColor
 {
-    CGFloat red =  (CGFloat)arc4random() / (CGFloat)RAND_MAX;
-    CGFloat blue = (CGFloat)arc4random() / (CGFloat)RAND_MAX;
-    CGFloat green = (CGFloat)arc4random() / (CGFloat)RAND_MAX;
+    CGFloat red =  (CGFloat)(arc4random() % 256);
+    CGFloat blue = (CGFloat)(arc4random() % 256);
+    CGFloat green = (CGFloat)(arc4random() % 256);
     return XO_RGB(red, green, blue);
 }
 
