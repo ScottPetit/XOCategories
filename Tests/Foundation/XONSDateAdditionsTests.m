@@ -15,22 +15,6 @@
 
 @end
 
-//- (NSTimeInterval)numberOfSecondsInAMinute;
-//- (NSTimeInterval)numberOfMinutesInAHour;
-//- (NSTimeInterval)numberOfDaysInAWeek;
-//- (NSTimeInterval)numberOfSecondsInAHour;
-//- (NSTimeInterval)numberOfHoursInADay;
-//- (NSTimeInterval)numberOfSecondsInADay;
-//- (NSTimeInterval)numberOfSecondsInAWeek;
-//
-//- (BOOL)xo_isAfter:(NSDate *)aDate;
-//
-//- (BOOL)xo_isOnOrAfter:(NSDate *)aDate;
-//
-//- (BOOL)xo_isBefore:(NSDate *)aDate;
-//
-//- (BOOL)xo_isOnOrBefore:(NSDate *)aDate;
-
 @implementation XONSDateAdditionsTests
 
 - (void)setUp
@@ -73,36 +57,6 @@
 - (void)testTheNumberOfSecondsInAWeek
 {
     XCTAssertEqualObjects(@604800, @([NSDate xo_numberOfSecondsInAWeek]), @"The number of seconds in a week is 604800");
-}
-
-- (void)testIsAfter
-{
-    NSDate *afterDate = [self.date dateByAddingTimeInterval:-5000];
-    
-    XCTAssertTrue([self.date xo_isAfter:afterDate], @"The current date should be after the afterDate - %@", afterDate);
-}
-
-- (void)testIsOnOrAfter
-{
-    NSDate *afterDate = [self.date dateByAddingTimeInterval:-5000];
-    
-    XCTAssertTrue([self.date xo_isOnOrAfter:afterDate], @"The current date should be on or after the afterDate - %@", afterDate);
-    XCTAssertTrue([self.date xo_isOnOrAfter:self.date], @"The current date should be on or after the current date - %@", self.date);
-}
-
-- (void)testIsBefore
-{
-    NSDate *beforeDate = [self.date dateByAddingTimeInterval:5000];
-    
-    XCTAssertTrue([self.date xo_isBefore:beforeDate], @"The current date should be before the beforeDate - %@", beforeDate);
-}
-
-- (void)testIsOnOrBefore
-{
-    NSDate *beforeDate = [self.date dateByAddingTimeInterval:5000];
-    
-    XCTAssertTrue([self.date xo_isOnOrBefore:beforeDate], @"The current date should be on or before the before date - %@", beforeDate);
-    XCTAssertTrue([self.date xo_isOnOrBefore:self.date], @"The current date should be on or before the current date - %@", self.date);
 }
 
 @end
