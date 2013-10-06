@@ -23,4 +23,6 @@
 */
 - (BOOL)xo_containsString:(NSString *)string;
 
+- (BOOL)xo_containsString:(NSString *)string caseInsensitive:(BOOL)caseInsensitive;
+
 @end

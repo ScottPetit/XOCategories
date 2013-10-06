@@ -24,4 +24,13 @@
     XCTAssertFalse([testString xo_containsString:@"false"], @"%@ should not contain the string false", testString);
 }
 
+- (void)testThatStringsCanContainStringsCaseInsensitive
+{
+    NSString *testString = @"PM";
+    
+    XCTAssertFalse([testString xo_containsString:@"pm"], @"%@ should not contain the string pm", testString);
+    XCTAssertFalse([testString xo_containsString:@"pm" caseInsensitive:NO], @"%@ should not contain the string pm when not using case insensitive search", testString);
+    XCTAssertTrue([testString xo_containsString:@"pm" caseInsensitive:YES], @"%@ should contain the string pm when using case insensitive search", testString);
+}
+
 @end

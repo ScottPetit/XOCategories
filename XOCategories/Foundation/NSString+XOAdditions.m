@@ -30,4 +30,20 @@
     return [self rangeOfString:string].location != NSNotFound;
 }
 
+- (BOOL)xo_containsString:(NSString *)string caseInsensitive:(BOOL)caseInsensitive
+{
+//    This could be refactored to look like this but becomes beholden to NSStringCompareOptions enum not changing
+//    Therefore I prefer doing it the long way
+//    NSStringCompareOptions options = caseInsensitive ? NSCaseInsensitiveSearch : 0;
+    
+    if (caseInsensitive)
+    {
+        return [self rangeOfString:string options:NSCaseInsensitiveSearch].location != NSNotFound;
+    }
+    else
+    {
+        return [self rangeOfString:string].location != NSNotFound;
+    }
+}
+
 @end
