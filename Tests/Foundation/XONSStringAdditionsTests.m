@@ -33,4 +33,11 @@
     XCTAssertTrue([testString xo_containsString:@"pm" options:NSCaseInsensitiveSearch], @"%@ should contain the string pm when using case insensitive search", testString);
 }
 
+- (void)testThatCapitalizedStringCapitalizesStrings
+{
+    NSString *testString = @"testString";
+    
+    XCTAssertEqualObjects([testString xo_capitalizedString], @"TestString", @"Capitalized string should be TestString maintaining capitalization of other letters");
+}
+
 @end

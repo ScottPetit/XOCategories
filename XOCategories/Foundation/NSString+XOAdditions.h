@@ -25,4 +25,9 @@
 
 - (BOOL)xo_containsString:(NSString *)string options:(NSStringCompareOptions)options;
 
+/**
+ @return A capitalized string that maintains the case of the receiver's other letters. (i.e. testString becomes TestString) 
+ */
+- (NSString *)xo_capitalizedString;
+
 @end
