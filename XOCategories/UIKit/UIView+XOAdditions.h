@@ -38,11 +38,9 @@ typedef void (^XOCompletionBlock)(BOOL finished);
 - (void)xo_fadeInWithCompletion:(XOCompletionBlock)completionBlock;
 
 /**
- Checks the alpha and hidden property of the receiver. Does not check it's location or superview.
- 
- @return A BOOL indicating whther the view is visible.  If YES the views hidden property is set to NO and the view's alpha is non-zero.
+ Sets the corner radius of the receivers layer and masks to bounds
  */
-- (BOOL)xo_visible;
+- (void)xo_roundCornersWithRadius:(CGFloat)radius;
 
 /**
  Sets the corner radius of the receivers layer and masks to bounds.

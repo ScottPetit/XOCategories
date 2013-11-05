@@ -43,15 +43,15 @@ static NSInteger const kAnimationDuration = 0.3;
     } completion:completionBlock];
 }
 
-- (BOOL)xo_visible
+- (void)xo_roundCornersWithRadius:(CGFloat)radius
 {
-    return !self.hidden && self.alpha != 0;
+    [self.layer setCornerRadius:radius];
+    self.layer.masksToBounds = YES;
 }
 
 - (void)xo_makeCircular
 {
-    [self.layer setCornerRadius:CGRectGetWidth(self.frame) / 2];
-    self.layer.masksToBounds = YES;
+    [self xo_roundCornersWithRadius:(CGRectGetWidth(self.frame) / 2)];
 }
 
 @end
